@@ -1,0 +1,14 @@
+language: en
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: CountVectorsFeaturizer
+- name: DIETClassifier
+  epochs: 100
+- name: EntitySynonymMapper
+
+policies:
+- name: MemoizationPolicy
+- name: TEDPolicy
+  max_history: 5
+assistant_id: 20251115-135604-null-agent

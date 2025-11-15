@@ -1,0 +1,46 @@
+version: "3.3"
+
+intents:
+  - change_flight
+  - affirm
+  - greet
+  - goodbye
+
+entities:
+  - origin
+  - destination
+  - date
+
+slots:
+  origin:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: origin
+  destination:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: destination
+  date:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: date
+
+responses:
+  utter_ask_missing_details:
+    - text: "Please tell me origin, destination and date for the change."
+
+  utter_confirm_changed:
+    - text: "Your flight from {origin} to {destination} has been changed to {date}."
+
+actions:
+  - action_change_flight
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

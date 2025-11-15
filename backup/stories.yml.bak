@@ -1,0 +1,9 @@
+version: "3.1"
+stories:
+- story: change flight happy path
+  steps:
+  - intent: change_flight
+  - action: action_start_change
+  - intent: affirm
+  - action: action_change_flight
+

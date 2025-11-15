@@ -1,0 +1,9 @@
+version: "3.3"
+nlu:
+- intent: change_flight
+  examples: |
+    - change my flight from [London](origin) to [Paris](destination) next [Tuesday](date)
+    - can you change my flight from [Delhi](origin) to [Mumbai](destination) on [Friday](date)?
+    - I want to reschedule my flight to [Monday](date)
+    - move my flight from [Berlin](origin) to [Rome](destination)
+    - change my booking

@@ -1,0 +1,44 @@
+{
+  "text": {
+    "i": 7,
+    "want": 16,
+    "to": 14,
+    "change": 3,
+    "my": 11,
+    "flight": 5,
+    "can": 2,
+    "you": 17,
+    "booking": 1,
+    "reschedule": 13,
+    "move": 10,
+    "another": 0,
+    "date": 4,
+    "modify": 9,
+    "from": 6,
+    "london": 8,
+    "paris": 12,
+    "tuesday": 15
+  },
+  "intent": {
+    "change_flight": 0
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 7,
+    "action_restart": 8,
+    "action_session_start": 10,
+    "action_default_fallback": 5,
+    "action_deactivate_loop": 2,
+    "action_revert_fallback_events": 9,
+    "action_default_ask_affirmation": 3,
+    "action_default_ask_rephrase": 4,
+    "action_two_stage_fallback": 11,
+    "action_unlikely_intent": 12,
+    "action_back": 0,
+    "action_extract_slots": 6,
+    "action_change_flight": 1,
+    "utter_changed_success": 13
+  },
+  "action_text": null,
+  "intent_response_key": null
+}
